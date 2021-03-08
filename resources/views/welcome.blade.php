@@ -16,9 +16,23 @@
 
     </head>
     <body class="antialiased">
-<div class="main-wrapper">
-
-</div>
+        <div class="header-wrapper">
+            <div class="header-logo">
+                <img src="../images/main-logo.svg">
+            </div>
+            <div class="header-title text-white">
+                <h1>Robin assistant service, your daily assistant</h1>
+            </div>
+            <div class="header-text text-white">
+                <p>Robin Assistant is a new assistive software solution for people with special needs and their carers
+                    in performing everyday activities. It is used for different types of brain conditions: autism
+                    spectrum, Down syndrome, Alzheimer’s disease and various forms of dementia, and other sorts of
+                    brain injuries.</p>
+            </div>
+            <div class="header-button text-white">
+                <p>Sign up!</p>
+            </div>
+        </div>
 
     <div>
         @if (Route::has('login'))

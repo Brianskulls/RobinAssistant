@@ -32717,12 +32717,42 @@ select {
           animation: bounce 1s infinite;
 }
 
-.main-wrapper {
+.text-white {
+  color: white;
+}
+
+.header-wrapper {
+  width: 100%;
   height: 100vh;
   background-image: url(/images/main-image.svg?deccc0be94749093cd7b8a6b9cd51574);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.header-logo {
+  float: right;
+}
+
+.header-title {
+}
+
+.header-title h1 {
+  font-size: 71px;
+}
+
+.header-text {
+}
+
+.header-text p {
+  font-size: 25px;
+}
+
+.header-button {
+}
+
+.header-button p {
+  font-size: 25px;
 }
 
 @media (min-width: 640px) {
