@@ -32719,7 +32719,7 @@ select {
 
 .main-wrapper {
   height: 100vh;
-  background-image: url('/images/main-image.svg');
+  background-image: url(/images/main-image.svg?deccc0be94749093cd7b8a6b9cd51574);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

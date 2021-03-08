@@ -3,11 +3,11 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="/css/app.css" rel="stylesheet">
+        <link href="{{ url('/css/app.css') }}" rel="stylesheet">
         <title>Robin Assistant</title>
 
         <!-- Fonts -->
-
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
         <!-- Styles -->
         <style>
@@ -16,10 +16,11 @@
 
     </head>
     <body class="antialiased">
+<div class="main-wrapper">
 
-        <div class="main-wrapper">
+</div>
 
-        </div>
+    <div>
         @if (Route::has('login'))
             <div>
                 @auth
@@ -33,5 +34,8 @@
                 @endauth
             </div>
         @endif
+
+
+    </div>
     </body>
 </html>
