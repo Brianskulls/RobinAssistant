@@ -16,24 +16,81 @@
 
     </head>
     <body class="antialiased">
-        <div class="header-wrapper">
-            <div class="header-logo">
-                <img src="../images/main-logo.svg">
+        {{-- Section 1 --}}
+        <div class="section1-container">
+            <div class="section1-logo">
+                <img src="../images/main-logo.svg" alt="Robin Assistant logo">
             </div>
-            <div class="header-title text-white">
+            <div class="section1-body text-white text-gilroy">
                 <h1>Robin assistant service, your daily assistant</h1>
-            </div>
-            <div class="header-text text-white">
                 <p>Robin Assistant is a new assistive software solution for people with special needs and their carers
                     in performing everyday activities. It is used for different types of brain conditions: autism
                     spectrum, Down syndrome, Alzheimer’s disease and various forms of dementia, and other sorts of
                     brain injuries.</p>
             </div>
-            <div class="header-button text-white">
-                <p>Sign up!</p>
+            <div class="section1-bottom text-white text-gilroy">
+                <button type="button">Sign up!</button>
+                <img src="../images/main-scroll.svg">
             </div>
         </div>
-
+        {{-- Section 2 --}}
+        <div class="section2-container">
+            <div class="section2-image">
+                <img src="../images/section2-image.jpeg">
+            </div>
+            <div class="section2-body text-gilroy">
+                <h2 class="text-pink">What is Robin Service?</h2>
+                <p class="section2-textpadding">Robin is an assistive software solution that allows carers to set up
+                    and plan daily activities for the ones they are taking care of. Robin will then assist the
+                    individual in performing these activities by providing step-by-step guidance, using images, text
+                    and audio instructions.</p>
+                <p class="section2-textpadding">During the XI Autism-Europe International Congress 2016 in Edinburgh,
+                    one small booth surprised many of the attendees. It was Robin officially presenting for the first
+                    time, showcasing its interface and fresh design which was developed together with Mediacollege
+                    Amsterdam. </p>
+                <p>The Robin team was very happy to have been met with overwhelmingly positive reactions, advice, and
+                    support from people with autism, their family members and carers, therapists, and autism
+                    specialists. All of them provided their feedback, opinions, new ideas, and many other very useful
+                    contributions. Everyone shared our goal of creating a service that fully caters to the needs of
+                    people with special needs, helping them to have a better quality of life.</p>
+            </div>
+        </div>
+        {{-- Section 3 --}}
+        <div class="section3-container text-gilroy">
+            <div class="section3-left">
+{{--                <h2 class="text-pink">Benefits</h2>--}}
+{{--                <p>Robin has several benefits to make your daily life as comfortable as possible. What are the benefits--}}
+{{--                    of Robin Assistent and why should you use it?</p>--}}
+            </div>
+            <div class="section3-right">
+                <div class="timeline">
+                    <div class="container right">
+                        <div class="content">
+                            <h2>Independence</h2>
+                            <p>
+                                Robin has several benefits to make your daily life as comfortable as possible. What are the benefits of Robin Assistent and why should you use it?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="container left">
+                        <div class="content">
+                            <h2>Daily routines</h2>
+                            <p>
+                                Robin has several benefits to make your daily life as comfortable as possible. What are the benefits of Robin Assistent and why should you use it?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="container right">
+                        <div class="content">
+                            <h2>Dashboard management</h2>
+                            <p>
+                                Robin has several benefits to make your daily life as comfortable as possible. What are the benefits of Robin Assistent and why should you use it?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     <div>
         @if (Route::has('login'))
             <div>

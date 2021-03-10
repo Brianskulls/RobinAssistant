@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34a5616f-0256-4f1b-b1c5-8ee2e3800ec7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/main-logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/images/main-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/gilroy-light.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/main-scroll.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/section2-image.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/fonts/gilroy-light.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/main-scroll.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/section2-image.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
@@ -165,9 +169,11 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/images" />
+      <recent name="$PROJECT_DIR$/public/fonts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources/images" />
+      <recent name="$PROJECT_DIR$/resources/fonts" />
     </key>
   </component>
   <component name="RunManager">
@@ -186,11 +192,21 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1615214437556</updated>
-      <workItem from="1615214441061" duration="4816000" />
+      <workItem from="1615214441061" duration="18910000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="463" y="271" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1615296493168">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="463" y="271" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.877@0.23.1440.877" timestamp="1615296493168" />
+    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1615304212343">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1615304212343" />
   </component>
 </project>
