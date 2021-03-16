@@ -1,19 +1,18 @@
 <?php
 
-
 namespace App\Models;
 
-
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Role extends Model
+class Package extends Model
 {
     /**
      * The table associated with the model.
      *
      * @var string
      */
-    protected $table = 'roles';
+    protected $table = 'packages';
 
     public function users()
     {
@@ -23,5 +22,10 @@ class Role extends Model
     public function organisations()
     {
         return $this->hasMany(Organisation::class);
+    }
+
+    public function invoice()
+    {
+        return $this->belongsTo(Invoice::class);
     }
 }

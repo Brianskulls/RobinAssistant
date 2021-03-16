@@ -46,6 +46,11 @@ return [
             'provider' => 'users',
             'hash' => false,
         ],
+
+        'organisation' => [
+            'driver' => 'session',
+            'provider' => 'organisations'
+        ]
     ],
 
     /*
@@ -69,6 +74,11 @@ return [
         'users' => [
             'driver' => 'eloquent',
             'model' => App\Models\User::class,
+        ],
+
+        'organisations' => [
+            'driver' => 'eloquent',
+            'model' => \App\Models\Organisation::class,
         ],
 
         // 'users' => [
@@ -95,6 +105,12 @@ return [
     'passwords' => [
         'users' => [
             'provider' => 'users',
+            'table' => 'password_resets',
+            'expire' => 60,
+            'throttle' => 60,
+        ],
+        'organisations' => [
+            'provider' => 'organisations',
             'table' => 'password_resets',
             'expire' => 60,
             'throttle' => 60,
