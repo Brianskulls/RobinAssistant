@@ -2,23 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34a5616f-0256-4f1b-b1c5-8ee2e3800ec7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/fonts/gilroy-light.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/main-scroll.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/section2-image.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/fonts/gilroy-light.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/images/main-scroll.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/images/section2-image.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/blurred-image.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/dutch-flag.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/english-flag.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/german-flag.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/partner1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/partner2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/partner3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/partner4.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/partner5.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/partner6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/partner7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/russian-flag.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/section2-image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/section4-image.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/spain-flag.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/blurred-image.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/dutch-flag.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/english-flag.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/german-flag.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/partner1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/partner2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/partner3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/partner4.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/partner5.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/partner6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/partner7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/russian-flag.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/section2-image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/section4-image.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/spain-flag.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/section2-image.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable />
@@ -165,15 +193,18 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/images" />
-      <recent name="$PROJECT_DIR$/public/fonts" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources/images" />
+      <recent name="$PROJECT_DIR$/public/images" />
       <recent name="$PROJECT_DIR$/resources/fonts" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/images" />
+      <recent name="$PROJECT_DIR$/resources/images" />
+      <recent name="$PROJECT_DIR$/public/fonts" />
     </key>
   </component>
   <component name="RunManager">
@@ -192,7 +223,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1615214437556</updated>
-      <workItem from="1615214441061" duration="18910000" />
+      <workItem from="1615214441061" duration="29490000" />
+      <workItem from="1615383788661" duration="5018000" />
+      <workItem from="1615759820147" duration="42037000" />
     </task>
     <servers />
   </component>
@@ -204,9 +237,36 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="463" y="271" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.877@0.23.1440.877" timestamp="1615296493168" />
-    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1615304212343">
+    <state x="458" y="215" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1615796716976">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1615304212343" />
+    <state x="458" y="215" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.877@0.23.1440.877" timestamp="1615796716976" />
+    <state x="229" y="100" key="SettingsEditor" timestamp="1615383777361">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="229" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1615383777361" />
+    <state x="534" y="385" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1615885579085">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="534" y="385" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.877@0.23.1440.877" timestamp="1615885579085" />
+    <state x="343" y="177" width="753" height="568" key="find.popup" timestamp="1615885706772">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="343" y="177" width="753" height="568" key="find.popup/0.23.1440.877@0.23.1440.877" timestamp="1615885706772" />
+    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1615886863517">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1615886863517" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/resources/js/app.js</url>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

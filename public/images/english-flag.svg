@@ -1,0 +1,36 @@
+<svg id="Component_23_5" data-name="Component 23 – 5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="59.6" height="54.844" viewBox="0 0 59.6 54.844">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="Path_15" data-name="Path 15" d="M50.691,33.323a15.156,15.156,0,0,1,3.594,4.409,17.728,17.728,0,0,1,2.083,8.509c0,10-8.031,16.846-20.187,27.206-1.348,1.149-2.813,2.4-4.344,3.717l-2.494,2.165a1.762,1.762,0,0,1-2.319,0c-2.432-2.127-4.772-4.121-6.837-5.881C8.031,63.087,0,56.243,0,46.241,0,36.982,6.437,30,14.973,30a13.346,13.346,0,0,1,8.335,2.881,16.839,16.839,0,0,1,2.454,2.346l2.353,2.93,2.845-3.33a16.581,16.581,0,0,1,2.1-1.946A13.346,13.346,0,0,1,41.4,30a14.8,14.8,0,0,1,4.378.651" transform="translate(0 -30)" fill="#4b8364"/>
+        </clipPath>
+        <clipPath id="clip-path-2">
+            <path id="Path_412" data-name="Path 412" d="M0,0V51.458H82.312V0Z"/>
+        </clipPath>
+        <clipPath id="clip-path-3">
+            <path id="Path_409" data-name="Path 409" d="M41.156,25.729H82.312V51.458Zm0,0V51.458H0Zm0,0H0V0Zm0,0V0H82.312Z"/>
+        </clipPath>
+    </defs>
+    <g id="Group_242" data-name="Group 242" transform="translate(-140 -40.156)">
+        <g id="Group_240" data-name="Group 240" transform="translate(140 40.156)" opacity="0.998">
+            <g id="Group_9" data-name="Group 9" transform="translate(0)">
+                <path id="Path_15-2" data-name="Path 15" d="M53.6,33.514a16.025,16.025,0,0,1,3.8,4.661,18.745,18.745,0,0,1,2.2,9c0,10.576-8.491,17.812-21.344,28.765-1.425,1.215-2.974,2.535-4.593,3.93l-2.637,2.289a1.863,1.863,0,0,1-2.452,0C26,79.907,23.528,77.8,21.345,75.938,8.491,64.984,0,57.748,0,47.172,0,37.382,6.806,30,15.831,30a14.111,14.111,0,0,1,8.813,3.046,17.8,17.8,0,0,1,2.6,2.48l2.488,3.1L32.735,35.1a17.531,17.531,0,0,1,2.221-2.058A14.111,14.111,0,0,1,43.768,30a15.646,15.646,0,0,1,4.629.688A37.64,37.64,0,0,1,53.6,33.514Z" transform="translate(0 -30)" fill="#fff"/>
+            </g>
+        </g>
+        <g id="Group_238" data-name="Group 238" transform="translate(141.616 41.582)" opacity="0.998">
+            <g id="Group_9-2" data-name="Group 9">
+                <g id="Mask_Group_1" data-name="Mask Group 1" clip-path="url(#clip-path)">
+                    <g id="Flag_of_the_United_Kingdom" transform="translate(-12.669 -1.695)" clip-path="url(#clip-path-2)">
+                        <path id="Path_406" data-name="Path 406" d="M0,0V51.458H82.312V0Z" fill="#012169"/>
+                        <path id="Path_407" data-name="Path 407" d="M0,0,82.312,51.458M82.312,0,0,51.458" stroke="#fff" stroke-width="4.449"/>
+                        <g id="Group_239" data-name="Group 239" clip-path="url(#clip-path-3)">
+                            <path id="Path_408" data-name="Path 408" d="M0,0,82.312,51.458M82.312,0,0,51.458" stroke="#c8102e" stroke-width="2.966"/>
+                        </g>
+                        <path id="Path_410" data-name="Path 410" d="M41.156,0V51.458M0,25.729H82.312" stroke="#fff" stroke-width="7.416"/>
+                        <path id="Path_411" data-name="Path 411" d="M41.156,0V51.458M0,25.729H82.312" stroke="#c8102e" stroke-width="4.449"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+    <path id="Polygon_7" data-name="Polygon 7" d="M12.172,2.828a4,4,0,0,1,5.657,0l5.343,5.343A4,4,0,0,1,20.343,15H9.657A4,4,0,0,1,6.828,8.172Z" transform="translate(45 54.844) rotate(180)" fill="#fff"/>
+</svg>
