@@ -62,8 +62,30 @@
                 <img src="../images/main-scroll.svg" class="heartAnimation">
             </div>
         </div>
+        {{-- NavBar --}}
+        <div id="navbar">
+            <div class="navbar-left">
+                <a href="#what-link"><p>What is Robin Assistant</p></a>
+                <a href="#benefits-link"><p>Benefits</p></a>
+                <a href="#work-link"><p>How does it work</p></a>
+                <a href="#price-link"><p>Prices</p></a>
+            </div>
+            <div class="navbar-right">
+                @if (Route::has('login'))
+                    @auth
+                        <a href="{{ url('/dashboard') }}">Dashboard</a>
+                    @else
+                        <a href="{{ route('login') }}" class="nav-login">Login</a>
+
+                        @if (Route::has('register'))
+                            <a href="{{ route('register') }}" class="nav-signup">Sign me up</a>
+                        @endif
+                    @endauth
+                @endif
+            </div>
+        </div>
         {{--  Section 2--}}
-        <div class="section2">
+        <div id="what-link" class="section2">
             <div class="section2-image"></div>
             <div class="section2-body">
                 <h2 class="text-pink">What is Robin Service?</h2>
@@ -84,7 +106,7 @@
             </div>
         </div>
         {{-- Section 3--}}
-        <div class="section3">
+        <div id="benefits-link" class="section3">
             <div class="section3-left">
                 <h2 class="text-pink">Benefits</h2>
                 <p>Robin has several benefits to make your daily life as comfortable as possible. What are the benefits
@@ -134,13 +156,13 @@
             </div>
         </div>
         {{-- Section 5--}}
-        <div class="section5">
+        <div id="work-link" class="section5">
             <h2 class="text-pink">How does it work?</h2>
             <p>The service consists of two parts: the online dashboard for the carers and the mobile app for the person
                 that requires special care.</p>
         </div>
         {{-- Section 6--}}
-        <div class="section6">
+        <div id="price-link" class="section6">
             <div class="section6-headertext">
                 <h2 class="text-green">Pricing</h2>
             </div>

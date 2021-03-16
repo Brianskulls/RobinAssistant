@@ -14,18 +14,18 @@ window.onload = (event) => {
     };
 
     document.getElementById('dutch').onclick = function changeDutch() {
-        document.getElementById('flag').src="../images/dutch-flag.png";
+        document.getElementById('flag').src="../images/dutch-flag.svg";
     };
 
     document.getElementById('german').onclick = function changeGerman() {
-        document.getElementById('flag').src="../images/german-flag.png";
+        document.getElementById('flag').src="../images/german-flag.svg";
     };
 
     document.getElementById('spanish').onclick = function changeSpain() {
-        document.getElementById('flag').src="../images/spain-flag.png";
+        document.getElementById('flag').src="../images/spain-flag.svg";
     };
 
-    // Heart animation in the header, made with GSAP
+    // GSAP heart animation in the header
     var tl = new TimelineMax({repeat: -1});
 
     $(".heartAnimation").each(function (index, element) {
@@ -41,5 +41,15 @@ window.onload = (event) => {
             scrollTop: $($.attr(this, 'href')).offset().top
         }, 500);
     });
+
+    // Show navbar after scrolling
+    window.addEventListener('scroll', function(){
+        if(window.scrollY > window.innerHeight){
+            document.getElementById('navbar').classList.add("sticky");
+        } else {
+            document.getElementById('navbar').classList.remove("sticky");
+        }
+    });
+
 };
 
