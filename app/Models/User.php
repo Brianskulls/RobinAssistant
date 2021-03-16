@@ -62,22 +62,6 @@ class User extends Authenticatable
         return $this->belongsTo(Role::class);
     }
 
-    public function hasPermission($permName)
-    {
-        $role = $this->role;
-        $perms = $role->permissions;
-
-        foreach($perms as $perm)
-        {
-            if($perm->name === $permName)
-            {
-                return true;
-            }
-        }
-
-        return false;
-    }
-
     public function hasRole($roleName)
     {
         return $this->role->name === $roleName;

@@ -17,11 +17,24 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+        //Seed all roles
+        $proCarer     = new Role(['name'=>'professional_carer']);
+        $carer        = new Role(['name'=>'carer']);
+        $organisation = new Role(['name'=>'organisation']);
 
+        $proCarer->save();
+        $carer->save();
+        $organisation->save();
 
-        //Seed all roles and permissions
-        $viewSecondaryCarers = new Permission(['name'=>'view_secondary_carers']);
+        //Create default user
+        $defaultUser = new User([
+            'name'=>'Begeleider 1',
+            'email'=>'app@robinassistant.loudmouth.nl',
+            'password'=>Hash::make('test12345')
+        ]);
 
-        // \App\Models\User::factory(10)->create();
+        //Assign the carer role to default user
+        $defaultUser->role()->associate($carer);
+        $defaultUser->save();
     }
 }
