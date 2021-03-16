@@ -71,17 +71,29 @@ class DatabaseSeeder extends Seeder
         ]);
         $orgBasicPlusPlan->save();
 
-        //Create default user
+        //Create default users
         $defaultUser = new User([
             'name' => 'Begeleider 1',
             'email' => 'app@robinassistant.loudmouth.nl',
             'password' => Hash::make('test12345')
         ]);
 
-        //Assign the carer role and family plan to default user
+        //Assign the carer role and family plan to default users
         $defaultUser->role()->associate($carer);
         $defaultUser->package()->associate($familyPlan);
         $defaultUser->save();
+
+        $defaultUserTwo = new User([
+            'name' => 'Begeleider 2',
+            'email' => 'app2@robinassistant.loudmouth.nl',
+            'password' => Hash::make('test12345')
+        ]);
+
+        //Assign the carer role and family plan to default users
+        $defaultUserTwo->role()->associate($proCarer);
+        $defaultUserTwo->package()->associate($indivProfBasicPlan);
+        $defaultUserTwo->save();
+
 
         $defaultOrganisation = new User([
             'email' => 'org@robinassistant.loudmouth.nl',
@@ -92,5 +104,8 @@ class DatabaseSeeder extends Seeder
         $defaultOrganisation->role()->associate($organisation);
         $defaultOrganisation->package()->associate($orgBasicPlan);
         $defaultOrganisation->save();
+
+        $defaultOrganisation->users()->save($defaultUser);
+        $defaultOrganisation->users()->save($defaultUserTwo);
     }
 }

@@ -81,4 +81,14 @@ class User extends Authenticatable
     {
         return $this->hasMany(PaymentMethod::class);
     }
+
+    public function organisation()
+    {
+        return $this->belongsTo(self::class, 'organisation_id');
+    }
+
+    public function users()
+    {
+        return $this->hasMany(self::class, 'organisation_id');
+    }
 }
