@@ -25,7 +25,7 @@ window.onload = (event) => {
         document.getElementById('flag').src="../images/spain-flag.svg";
     };
 
-    // Heart animation in the header, made with GSAP
+    // GSAP heart animation in the header
     var tl = new TimelineMax({repeat: -1});
 
     $(".heartAnimation").each(function (index, element) {

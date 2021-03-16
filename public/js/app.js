@@ -3822,7 +3822,7 @@ window.onload = function (event) {
 
   document.getElementById('spanish').onclick = function changeSpain() {
     document.getElementById('flag').src = "../images/spain-flag.svg";
-  }; // Heart animation in the header, made with GSAP
+  }; // GSAP heart animation in the header
 
 
   var tl = new TimelineMax({
