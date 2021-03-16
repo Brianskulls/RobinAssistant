@@ -19,6 +19,13 @@ class User extends Authenticatable
     use TwoFactorAuthenticatable;
 
     /**
+     * The table associated with the model.
+     *
+     * @var string
+     */
+    protected $table = 'users';
+
+    /**
      * The attributes that are mass assignable.
      *
      * @var array
@@ -50,12 +57,31 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    /**
-     * The accessors to append to the model's array form.
-     *
-     * @var array
-     */
-    protected $appends = [
-        'profile_photo_url',
-    ];
+    public function role()
+    {
+        return $this->belongsTo(Role::class);
+    }
+
+    public function hasPermission($permName)
+    {
+        $role = $this->role;
+        $perms = $role->permissions;
+
+        foreach($perms as $perm)
+        {
+            if($perm->name === $permName)
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    public function hasRole($roleName)
+    {
+        return $this->role->name === $roleName;
+    }
+
+
 }
