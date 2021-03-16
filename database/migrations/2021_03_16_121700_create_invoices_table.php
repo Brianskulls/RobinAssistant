@@ -20,7 +20,6 @@ class CreateInvoicesTable extends Migration
             $table->integer('tax_percentage');
             $table->float('tax_free_price');
             $table->foreignId('user_id')->nullable(true)->constrained('users');
-            $table->foreignId('organisation_id')->nullable(true)->constrained('organisations');
             $table->foreignId('package_id')->constrained('packages');
             $table->foreignId('payment_method_id')->constrained('payment_methods');
             $table->timestamps();

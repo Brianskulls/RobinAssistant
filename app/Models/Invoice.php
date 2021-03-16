@@ -11,14 +11,9 @@ class Invoice extends Model
         return $this->belongsTo(User::class);
     }
 
-    public function organisation()
-    {
-        return $this->belongsTo(Organisation::class);
-    }
-
     public function package()
     {
-        return $this->belongsTo(Organisation::class);
+        return $this->belongsTo(Package::class);
     }
 
     public function paymentMethod()

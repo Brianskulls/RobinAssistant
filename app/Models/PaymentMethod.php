@@ -16,9 +16,4 @@ class PaymentMethod extends Model
     {
         return $this->belongsTo(User::class);
     }
-
-    public function organisation()
-    {
-        return $this->belongsTo(Organisation::class);
-    }
 }

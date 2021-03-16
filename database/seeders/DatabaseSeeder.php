@@ -83,7 +83,7 @@ class DatabaseSeeder extends Seeder
         $defaultUser->package()->associate($familyPlan);
         $defaultUser->save();
 
-        $defaultOrganisation = new Organisation([
+        $defaultOrganisation = new User([
             'email' => 'org@robinassistant.loudmouth.nl',
             'password' => Hash::make('test12345')
         ]);

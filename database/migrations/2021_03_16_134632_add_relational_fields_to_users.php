@@ -14,7 +14,6 @@ class AddRelationalFieldsToUsers extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->foreignId('organisation_id')->nullable(true)->constrained('organisations')->cascadeOnDelete();
             $table->foreignId('role_id')->constrained('roles');
             $table->foreignId('package_id')->constrained('packages');
         });

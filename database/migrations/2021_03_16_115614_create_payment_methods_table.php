@@ -18,7 +18,6 @@ class CreatePaymentMethodsTable extends Migration
             $table->string('type');
             $table->text('vendor_url');
             $table->string('iban_number');
-            $table->foreignId('organisation_id')->nullable(true)->constrained('organisations');
             $table->foreignId('user_id')->nullable(true)->constrained('users');
             $table->timestamps();
         });
