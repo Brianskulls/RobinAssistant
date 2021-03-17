@@ -13,6 +13,12 @@
 <body>
     <div class="holder">
         <div class="holder-left">
+            <div class="holder-left-back">
+                <a class="holder-left-back-link" href="{{ route('infopage') }}">
+                    <img src="{{ url('images/arrow_left.svg') }}" alt="Go back">
+                    <p>Back</p>
+                </a>
+            </div>
             @yield('content')
         </div>
         <div class="holder-right">
