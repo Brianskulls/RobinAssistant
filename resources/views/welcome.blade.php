@@ -51,7 +51,7 @@
                             @if (Route::has('register'))
                                 <a href="{{ route('register') }}">Sign up!</a>
                             @endif
-                            <a href="{{ route('login') }}">Login</a>
+                            <a class="button-set-padding" href="{{ route('login') }}">Login</a>
                         @endauth
                     @endif
                 </div>
@@ -80,7 +80,7 @@
                 @endif
             </div>
         </div>
-        {{--  Section 2--}}
+        {{-- Section 2--}}
         <div id="what-link" class="section2">
             <div class="section2-image"></div>
             <div class="section2-body">
