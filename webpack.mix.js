@@ -12,17 +12,13 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
+    .js('resources/js/dashboard.js', 'public/js')
     .postCss('resources/css/app.css', 'public/css', [
         require('postcss-import'),
         require('tailwindcss'),
         require('autoprefixer'),
     ])
-    .postCss('resources/css/tailwind.css','public/css', [
-        require('postcss-import'),
-        require('tailwindcss'),
-        require('autoprefixer'),
-    ])
-    .sass('resources/css/login_register/no-scroll.scss', 'public/css/login_register');
+    .postCss('resources/css/dashboard.css', 'public/css');
 
 if (mix.inProduction()) {
     mix.version();
