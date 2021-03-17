@@ -73,7 +73,8 @@ class DatabaseSeeder extends Seeder
 
         //Create default users
         $defaultUser = new User([
-            'name' => 'Begeleider 1',
+            'first_name' => 'Jan',
+            'last_name' => 'Steenstra',
             'email' => 'app@robinassistant.loudmouth.nl',
             'password' => Hash::make('test12345')
         ]);
@@ -84,7 +85,8 @@ class DatabaseSeeder extends Seeder
         $defaultUser->save();
 
         $defaultUserTwo = new User([
-            'name' => 'Begeleider 2',
+            'first_name' => 'Tessa',
+            'last_name' => 'Boek',
             'email' => 'app2@robinassistant.loudmouth.nl',
             'password' => Hash::make('test12345')
         ]);
