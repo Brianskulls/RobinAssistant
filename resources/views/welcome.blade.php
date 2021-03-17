@@ -73,7 +73,7 @@
             <div class="navbar-right">
                 @if (Route::has('login'))
                     @auth
-                        <a href="{{ url('/dashboard') }}">Dashboard</a>
+                        <a href="{{ url('/dashboard') }}" class="nav-login">Dashboard</a>
                     @else
                         <a href="{{ route('login') }}" class="nav-login">Login</a>
 
