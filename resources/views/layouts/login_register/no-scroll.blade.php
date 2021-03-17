@@ -19,7 +19,9 @@
                     <p>Back</p>
                 </a>
             </div>
-            @yield('content')
+            <div class="holder-left-content">
+                @yield('content')
+            </div>
         </div>
         <div class="holder-right">
             <a href="{{ route('infopage') }}">

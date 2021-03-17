@@ -50,7 +50,7 @@ h3 {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 0 8%;
+    padding: 0 4rem 0 8%;
     box-sizing: border-box;
 }
 
@@ -179,6 +179,10 @@ h3 {
     background-repeat: no-repeat;
     display: none;
     margin-bottom: 16px;
+}
+
+.heartAnimation {
+    margin-right: calc(8% - 4rem);
 }
 
 @media screen and (max-width: 825px) {

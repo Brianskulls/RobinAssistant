@@ -1,3 +1,11 @@
+@font-face {
+  font-family: GilroyLight;
+  src: url(/fonts/gilroy-light.otf?cc7ab55d27205bd640016b19810e50c7);
+}
+* {
+  font-family: GilroyLight;
+}
+
 body {
   background-image: url(/images/main-image.png?1793dcc7c072bdf020e521a5bb1abe76);
   width: 100%;
@@ -6,7 +14,10 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
-
+body h1 {
+  font-size: 62px;
+  color: white;
+}
 .holder {
   width: 100%;
   height: 100%;
@@ -52,9 +63,14 @@ body {
   margin-left: 15px;
   font-weight: lighter;
 }
+.holder-left-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .holder-right {
-  padding-top: 8%;
-  padding-right: 9%;
+  padding-top: 40px;
+  padding-right: 4rem;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
