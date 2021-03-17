@@ -16,7 +16,13 @@ mix.js('resources/js/app.js', 'public/js')
         require('postcss-import'),
         require('tailwindcss'),
         require('autoprefixer'),
-    ]);
+    ])
+    .postCss('resources/css/tailwind.css','public/css', [
+        require('postcss-import'),
+        require('tailwindcss'),
+        require('autoprefixer'),
+    ])
+    .sass('resources/css/login_register/no-scroll.scss', 'public/css/login_register');
 
 if (mix.inProduction()) {
     mix.version();

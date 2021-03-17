@@ -1,4 +1,6 @@
 {
     "/js/app.js": "/js/app.js",
-    "/css/app.css": "/css/app.css"
+    "/css/tailwind.css": "/css/tailwind.css",
+    "/css/app.css": "/css/app.css",
+    "/css/login_register/no-scroll.css": "/css/login_register/no-scroll.css"
 }
