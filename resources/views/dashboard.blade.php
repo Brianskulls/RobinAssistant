@@ -55,7 +55,7 @@
             </div>
         </div>
 
-        <div class="menu collapsible">
+        <div class="menu collapsible open">
             <div class="menu-name">
                 <p class="font-size-20">Welcome {{ Auth::user()->first_name }}</p>
                 <div class="menu-name-icons">
@@ -63,21 +63,25 @@
                     <i class="fas fa-bell"></i>
                 </div>
             </div>
-            <i class="fas fa-angle-up"></i>
+            <div class="menu-arrow"></div>
         </div>
         <div class="menu-content">
             <div class="menu-settings">
-                <p>Account Settings</p>
+                <p class="font-size-24">Account Settings</p>
                 <a href="{{ route('logout') }}"><i class="fas fa-sign-out-alt"></i></a>
             </div>
             <div class="menu-changename">
-                <p>Name</p>
-                <i class="fas fa-pencil-alt"></i>
-                <p>{{ Auth::user()->name }}</p>
+                <div class="menu-changename-show">
+                    <p class="font-size-16">Name</p>
+                    <i class="fas fa-pencil-alt"></i>
+                </div>
+                <p class="font-size-18">{{ Auth::user()->name }}</p>
             </div>
             <div class="menu-changenumber">
-                <p>Mobile phone number</p>
-                <i class="fas fa-pencil-alt"></i>
+                <div class="menu-changenumber-show">
+                    <p>Mobile phone number</p>
+                    <i class="fas fa-pencil-alt"></i>
+                </div>
                 <p>{{ Auth::user()->phone_number }}</p>
             </div>
             <div class="menu-language">

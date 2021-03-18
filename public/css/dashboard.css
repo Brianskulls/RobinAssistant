@@ -108,16 +108,12 @@
 
 .menu {
     padding: 32px 38px 0 62px;
-    border-radius: 37px;
+    border-top-right-radius: 37px;
+    border-top-left-radius: 37px;
     display: flex;
     flex-direction: column;
     height: 82px;
-}
-
-.menu .fa-angle-up {
-    align-self: center;
-    position: absolute;
-    top: 60px;
+    transition: all 0.5s;
 }
 
 .menu-name {
@@ -125,7 +121,6 @@
     align-items: center;
     justify-content: space-between;
     width: 240px;
-    padding-bottom: 14px;
 }
 
 .menu-name p {
@@ -150,7 +145,33 @@
     height: 100%;
     border-bottom-right-radius: 37px;
     border-bottom-left-radius: 37px;
-    padding: 0 38px 0 62px;
+    padding: 27px 38px 0 62px;
+}
+
+.menu-settings {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 57px;
+}
+
+.menu-settings i {
+    font-size: 24px;
+}
+
+.menu-changename-show, .menu-changenumber-show {
+    display: flex;
+    align-items: center;
+    padding-bottom: 13px;
+}
+
+.menu-changename-show p, .menu-changenumber-show p {
+    padding-right: 14px;
+}
+
+.menu-changename-show i, .menu-changenumber-show i {
+    font-size: 14px;
+    color: #C6C6C5;
 }
 
 .fa-user-circle, .fa-bell, .fa-angle-up, .fa-sign-out-alt {
@@ -247,7 +268,16 @@
     width: 5px;
     margin-top: 20px;
 }
-.arrow::before, .arrow::after {
+
+.menu-arrow {
+    top: 65px;
+    height: 8px;
+    width: 8px;
+    align-self: center;
+    position: absolute;
+}
+
+.arrow::before, .arrow::after, .menu-arrow::before, .menu-arrow::after {
     content: "";
     position: absolute;
     bottom: 0px;
@@ -256,25 +286,53 @@
     transition: all 0.5s;
 }
 
-.arrow::before {
-    left: -1.5px;
+.arrow::before, .menu-arrow::before {
     transform: rotate(45deg);
-    background-color: #3D67AF;
+    background-color: #63B286;
+}
+
+.arrow::before {
+    left: -1.5px
+}
+
+.menu-arrow::before {
+    left: -2.5px;
+}
+
+.arrow::after, .menu-arrow::after {
+    transform: rotate(-45deg);
+    background-color: #63B286;
 }
 
 .arrow::after {
     left: 1.5px;
+}
+
+.menu-arrow::after {
+    left: 2.5px;
+}
+
+.open .arrow::before, .open .menu-arrow::before {
     transform: rotate(-45deg);
-    background-color: #3D67AF;
 }
 
 .open .arrow::before {
     left: -1.5px;
-    transform: rotate(-45deg);
+}
+
+.open .menu-arrow::before {
+    left: -2px;
+}
+
+.open .arrow::after, .open .menu-arrow::after {
+    transform: rotate(45deg);
 }
 
 .open .arrow::after {
     left: 1.5px;
-    transform: rotate(45deg);
+}
+
+.open .menu-arrow::after{
+    left: 2px;
 }
 
