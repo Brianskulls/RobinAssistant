@@ -7,21 +7,25 @@
     font-family: GilroyLight;
 }
 
-body {
-    background-image: url("../../images/main-image.png");
-    width: 100%;
-    height: 100vh;
-    background-position: right;
-    background-size: cover;
-    background-repeat: no-repeat;
+.outline-button {
+    width: 200px;
+    color: white;
+    font-size: 20px;
+    padding: 9px 50px;
+    border: 2px solid white;
+    border-radius: 35px;
+    transition: 0.3s;
 
+    &:hover {
+        background-color: #6CBD98;
+        border-color: #6CBD98;
+    }
+}
+
+body {
     h1 {
         font-size: 62px;
         color: white;
-    }
-
-    .form-group {
-        
     }
 }
 
@@ -29,25 +33,11 @@ body {
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-columns: 47% 53%;
 
     &-left {
         height: 100%;
         position: relative;
-        &::after {
-            z-index: -1;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            position: absolute;
-            background-image: url("../../images/main-image.png");
-            background-position: left;
-            background-size: cover;
-            background-repeat: no-repeat;
-            filter: blur(15px);
-            content: '';
-        }
+
         width: 100%;
         overflow: hidden;
         box-shadow: none;

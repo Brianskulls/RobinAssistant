@@ -20,3 +20,12 @@ Route::get('/', function () {
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
+Route::get('/logout', function (\Illuminate\Http\Request $request) {
+   \Illuminate\Support\Facades\Auth::logout();
+
+   $request->session()->invalidate();
+   $request->session()->regenerateToken();
+
+   return redirect()->route('infopage');
+})->name('logout');

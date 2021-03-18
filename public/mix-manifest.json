@@ -1,8 +1,10 @@
 {
     "/js/app.js": "/js/app.js",
     "/js/dashboard.js": "/js/dashboard.js",
-    "/css/dashboard.css": "/css/dashboard.css",
     "/css/tailwind.css": "/css/tailwind.css",
     "/css/app.css": "/css/app.css",
-    "/css/login_register/no-scroll.css": "/css/login_register/no-scroll.css"
+    "/css/login_register/register.css": "/css/login_register/register.css",
+    "/css/login_register/login.css": "/css/login_register/login.css",
+    "/css/login_register/no-scroll.css": "/css/login_register/no-scroll.css",
+    "/css/dashboard.css": "/css/dashboard.css"
 }

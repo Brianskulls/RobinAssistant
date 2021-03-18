@@ -57,7 +57,7 @@
 
         <div class="menu collapsible">
             <div class="menu-name">
-                <p class="font-size-20">Welcome {{ Auth::user()->name }}</p>
+                <p class="font-size-20">Welcome {{ Auth::user()->first_name }}</p>
                 <div class="menu-name-icons">
                     <i class="far fa-user-circle"></i>
                     <i class="fas fa-bell"></i>
@@ -68,7 +68,7 @@
         <div class="menu-content">
             <div class="menu-settings">
                 <p>Account Settings</p>
-                <i class="fas fa-sign-out-alt"></i>
+                <a href="{{ route('logout') }}"><i class="fas fa-sign-out-alt"></i></a>
             </div>
             <div class="menu-changename">
                 <p>Name</p>

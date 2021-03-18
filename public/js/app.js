@@ -21100,10 +21100,49 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
 /***/ }),
 
+/***/ "./resources/css/dashboard.css":
+/*!*************************************!*\
+  !*** ./resources/css/dashboard.css ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
 /***/ "./resources/css/login_register/no-scroll.scss":
 /*!*****************************************************!*\
   !*** ./resources/css/login_register/no-scroll.scss ***!
   \*****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/css/login_register/login.scss":
+/*!*************************************************!*\
+  !*** ./resources/css/login_register/login.scss ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/css/login_register/register.scss":
+/*!****************************************************!*\
+  !*** ./resources/css/login_register/register.scss ***!
+  \****************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -21130,19 +21169,6 @@ __webpack_require__.r(__webpack_exports__);
 /*!************************************!*\
   !*** ./resources/css/tailwind.css ***!
   \************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-
-/***/ }),
-
-/***/ "./resources/css/dashboard.css":
-/*!*************************************!*\
-  !*** ./resources/css/dashboard.css ***!
-  \*************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -21432,6 +21458,8 @@ process.umask = function() { return 0; };
 /******/ 		var deferredModules = [
 /******/ 			["./resources/js/app.js"],
 /******/ 			["./resources/css/login_register/no-scroll.scss"],
+/******/ 			["./resources/css/login_register/login.scss"],
+/******/ 			["./resources/css/login_register/register.scss"],
 /******/ 			["./resources/css/app.css"],
 /******/ 			["./resources/css/tailwind.css"],
 /******/ 			["./resources/css/dashboard.css"]

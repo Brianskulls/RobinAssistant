@@ -24,6 +24,8 @@ mix.js('resources/js/app.js', 'public/js')
         require('autoprefixer'),
     ])
     .sass('resources/css/login_register/no-scroll.scss', 'public/css/login_register')
+    .sass('resources/css/login_register/login.scss', 'public/css/login_register')
+    .sass('resources/css/login_register/register.scss', 'public/css/login_register')
     .postCss('resources/css/dashboard.css', 'public/css');
 
 if (mix.inProduction()) {

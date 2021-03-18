@@ -2,21 +2,28 @@
 
 @section('title','Login')
 
-@section('content')
+@section('head')
+    <link rel="stylesheet" href="{{ url('css/login_register/login.css') }}">
+@endsection
 
+@section('content')
     <h1>Welcome back!</h1>
     <form method="POST" action="{{ route('login') }}">
         @csrf
 
         <div class="form-group">
-            <label for="email">Email</label>
-            <input id="email" type="email" name="email" :value="old('email')" required autofocus />
+            <input id="email" type="email" name="email" :value="old('email')" placeholder="E-mail" required />
         </div>
 
         <div class="form-group">
-            <label for="password">Password</label>
-            <input id="password" type="password" name="password" required autocomplete="current-password" />
+            <input id="password" type="password" name="password" placeholder="Password" required autocomplete="current-password" />
         </div>
+
+        <p class="forgot-password">Forgot your password?</p>
+
+        <button class="outline-button">
+            Login
+        </button>
 
 {{--        <div>--}}
 {{--            <label for="remember_me" class="flex items-center">--}}
@@ -32,9 +39,7 @@
 {{--                </a>--}}
 {{--            @endif--}}
 
-{{--            <button>--}}
-{{--                Login--}}
-{{--            </button>--}}
+
 {{--        </div>--}}
     </form>
 @endsection

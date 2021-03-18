@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="{{ url('css/login_register/no-scroll.css') }}">
     <link rel="stylesheet" href="{{ url('css/normalize.css') }}">
     <link rel="stylesheet" href="{{ url('css/tailwind.css') }}">
+    @yield('head')
 </head>
 <body>
     <div class="holder">

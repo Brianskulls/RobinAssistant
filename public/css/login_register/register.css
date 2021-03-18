@@ -1,0 +1,99 @@
+body {
+  background-image: url(/images/main-image.png?eb4f2de523fe66c52ef06e5e7382bf3b);
+  width: 100%;
+  height: 100vh;
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body .holder {
+  grid-template-columns: 50% 50%;
+}
+body .holder-left {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+body .holder-left-content {
+  align-items: unset;
+}
+body .holder-left-text {
+  margin-left: 10%;
+  max-width: 658px;
+}
+body .holder-left p {
+  font-size: 20px;
+  align-self: flex-start;
+  color: white;
+  margin-bottom: 20px;
+}
+body .holder-left p:last-of-type {
+  margin-bottom: 0;
+}
+body form {
+  margin-top: 50px;
+  width: 100%;
+  max-width: 536px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+body form .outline-button {
+  max-width: 252px;
+  min-width: 200px;
+  width: 100%;
+}
+body form .forgot-password {
+  font-size: 20px;
+  color: white;
+  margin-top: 36px;
+  margin-bottom: 30px;
+}
+body form .form-buttons {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-height: 43px;
+}
+body form .form-group {
+  max-width: 536px;
+  min-width: 260px;
+  width: 100%;
+  margin-bottom: 26px;
+}
+body form .form-group-two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 16px;
+}
+body form .form-group:last-of-type {
+  margin-bottom: 0;
+}
+body form .form-group input {
+  background-color: rgba(198, 198, 198, 0.3);
+  border: 0.5px solid white;
+  padding: 13px 30px;
+  width: 100%;
+  color: white;
+  font-size: 18px;
+}
+body form .form-group input::-moz-placeholder {
+  color: white;
+}
+body form .form-group input:-ms-input-placeholder {
+  color: white;
+}
+body form .form-group input::placeholder {
+  color: white;
+}
+body form .form-group select {
+  background-color: rgba(198, 198, 198, 0.3);
+  border: 0.5px solid white;
+  padding: 15px 30px;
+  width: 100%;
+  color: white;
+  font-size: 18px;
+}
+body form .form-group select option {
+  color: black;
+  font-family: sans-serif;
+  font-weight: lighter;
+}

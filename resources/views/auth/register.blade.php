@@ -1,60 +1,81 @@
-<x-guest-layout>
-    <x-jet-authentication-card>
-        <x-slot name="logo">
-            <x-jet-authentication-card-logo />
-        </x-slot>
+@extends('layouts.login_register.no-scroll')
 
-        <x-jet-validation-errors class="mb-4" />
+@section('title','Login')
 
+@section('head')
+    <link rel="stylesheet" href="{{ url('css/login_register/register.css') }}">
+@endsection
+
+@section('content')
+    <div class="holder-left-text">
+        <h1>Hi, Nice to meet you!</h1>
+        <p>We at Robin Assistant are very happy that you want to use our service!</p>
+        <p>As soon as you have created an account, you will see a tutorial on the dashboard with how everything works, and you will also receive information about the payment scheme. If you have any questions, you can always contact our team.
+        </p>
         <form method="POST" action="{{ route('register') }}">
             @csrf
 
-            <div>
-                <x-jet-label for="name" value="{{ __('Name') }}" />
-                <x-jet-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
-            </div>
-
-            <div class="mt-4">
-                <x-jet-label for="email" value="{{ __('Email') }}" />
-                <x-jet-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required />
-            </div>
-
-            <div class="mt-4">
-                <x-jet-label for="password" value="{{ __('Password') }}" />
-                <x-jet-input id="password" class="block mt-1 w-full" type="password" name="password" required autocomplete="new-password" />
-            </div>
-
-            <div class="mt-4">
-                <x-jet-label for="password_confirmation" value="{{ __('Confirm Password') }}" />
-                <x-jet-input id="password_confirmation" class="block mt-1 w-full" type="password" name="password_confirmation" required autocomplete="new-password" />
-            </div>
-
-            @if (Laravel\Jetstream\Jetstream::hasTermsAndPrivacyPolicyFeature())
-                <div class="mt-4">
-                    <x-jet-label for="terms">
-                        <div class="flex items-center">
-                            <x-jet-checkbox name="terms" id="terms"/>
-
-                            <div class="ml-2">
-                                {!! __('I agree to the :terms_of_service and :privacy_policy', [
-                                        'terms_of_service' => '<a target="_blank" href="'.route('terms.show').'" class="underline text-sm text-gray-600 hover:text-gray-900">'.__('Terms of Service').'</a>',
-                                        'privacy_policy' => '<a target="_blank" href="'.route('policy.show').'" class="underline text-sm text-gray-600 hover:text-gray-900">'.__('Privacy Policy').'</a>',
-                                ]) !!}
-                            </div>
-                        </div>
-                    </x-jet-label>
+            <div class="form-group-two">
+                <div class="form-group">
+                    <input id="first_name" type="text" name="first_name" placeholder="First name" required />
                 </div>
-            @endif
 
-            <div class="flex items-center justify-end mt-4">
-                <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('login') }}">
-                    {{ __('Already registered?') }}
-                </a>
-
-                <x-jet-button class="ml-4">
-                    {{ __('Register') }}
-                </x-jet-button>
+                <div class="form-group">
+                    <input id="last_name" type="text" name="last_name" placeholder="Last name" required />
+                </div>
             </div>
+            <div class="form-group-two">
+                <div class="form-group">
+                    <input id="company_name" type="text" name="company_name" placeholder="Company name" />
+                </div>
+
+                <div class="form-group">
+                    <input id="phone_number" type="tel" name="phone_number" placeholder="Phone number" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <input id="email" type="email" name="email" placeholder="Email" required />
+            </div>
+
+            <div class="form-group">
+                <input id="password" type="password" name="password" placeholder="Password" required />
+            </div>
+
+            <div class="form-group">
+                <select name="package" id="package">
+                    <option value="" disabled selected>Subscription</option>
+                    <option value="family_plan">Family plan</option>
+                    <option value="family_plan">Family plan</option>
+                    <option value="family_plan">Family plan</option>
+                    <option value="family_plan">Family plan</option>
+                    <option value="family_plan">Family plan</option>
+                </select>
+            </div>
+
+            <div class="form-buttons">
+                <button class="outline-button">
+                    Register
+                </button>
+            </div>
+
+
+            {{--        <div>--}}
+            {{--            <label for="remember_me" class="flex items-center">--}}
+            {{--                <input type="checkbox" id="remember_me" name="remember" />--}}
+            {{--                <span>Remember me</span>--}}
+            {{--            </label>--}}
+            {{--        </div>--}}
+
+            {{--        <div>--}}
+            {{--            @if (Route::has('password.request'))--}}
+            {{--                <a href="{{ route('password.request') }}">--}}
+            {{--                    Forgot your password?--}}
+            {{--                </a>--}}
+            {{--            @endif--}}
+
+
+            {{--        </div>--}}
         </form>
-    </x-jet-authentication-card>
-</x-guest-layout>
+    </div>
+@endsection
