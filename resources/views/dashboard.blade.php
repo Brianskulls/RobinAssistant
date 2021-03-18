@@ -65,41 +65,41 @@
             </div>
             <div class="menu-arrow"></div>
         </div>
-        <div class="menu-content">
-            <div class="menu-settings">
-                <p class="font-size-24">Account Settings</p>
-                <a href="{{ route('logout') }}"><i class="fas fa-sign-out-alt"></i></a>
-            </div>
-            <div class="menu-changename">
-                <div class="menu-changename-show">
-                    <p class="font-size-16">Name</p>
-                    <i class="fas fa-pencil-alt"></i>
-                </div>
-                <p class="font-size-18">{{ Auth::user()->name }}</p>
-            </div>
-            <div class="menu-changenumber">
-                <div class="menu-changenumber-show">
-                    <p>Mobile phone number</p>
-                    <i class="fas fa-pencil-alt"></i>
-                </div>
-                <p>{{ Auth::user()->phone_number }}</p>
-            </div>
-            <div class="menu-language">
+{{--        <div class="menu-content">--}}
+{{--            <div class="menu-settings">--}}
+{{--                <p class="font-size-24">Account Settings</p>--}}
+{{--                <a href="{{ route('logout') }}"><i class="fas fa-sign-out-alt"></i></a>--}}
+{{--            </div>--}}
+{{--            <div class="menu-changename">--}}
+{{--                <div class="menu-changename-show">--}}
+{{--                    <p class="font-size-16">Name</p>--}}
+{{--                    <i class="fas fa-pencil-alt"></i>--}}
+{{--                </div>--}}
+{{--                <p class="font-size-18">{{ Auth::user()->name }}</p>--}}
+{{--            </div>--}}
+{{--            <div class="menu-changenumber">--}}
+{{--                <div class="menu-changenumber-show">--}}
+{{--                    <p>Mobile phone number</p>--}}
+{{--                    <i class="fas fa-pencil-alt"></i>--}}
+{{--                </div>--}}
+{{--                <p>{{ Auth::user()->phone_number }}</p>--}}
+{{--            </div>--}}
+{{--            <div class="menu-language">--}}
 
-            </div>
-            <div class="menu-email">
-                <p>Email</p>
-                <p>{{ Auth::user()->email }}</p>
-                <p>Change email</p>
-            </div>
-            <div class="menu-invites">
-                <p>Invites</p>
-                <p>There are no invites at the moment.</p>
-            </div>
-            <div class="menu-tutorials">
-                <p>Tutorials</p>
-            </div>
-        </div>
+{{--            </div>--}}
+{{--            <div class="menu-email">--}}
+{{--                <p>Email</p>--}}
+{{--                <p>{{ Auth::user()->email }}</p>--}}
+{{--                <p>Change email</p>--}}
+{{--            </div>--}}
+{{--            <div class="menu-invites">--}}
+{{--                <p>Invites</p>--}}
+{{--                <p>There are no invites at the moment.</p>--}}
+{{--            </div>--}}
+{{--            <div class="menu-tutorials">--}}
+{{--                <p>Tutorials</p>--}}
+{{--            </div>--}}
+{{--        </div>--}}
         <script src="{{ url('/js/dashboard.js') }}"></script>
     </body>
 </html>
